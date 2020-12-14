@@ -1,4 +1,14 @@
+import UsersList from "../components/UsersList";
+
 export default function Users(props) {
-  console.log(props);
-  return <h2> Users works!</h2>;
+  const USERS = [
+    {
+      id: "u1",
+      name: "John Doe",
+      image: "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg",
+      places: 7,
+    },
+  ];
+
+  return <UsersList items={USERS} />;
 }
